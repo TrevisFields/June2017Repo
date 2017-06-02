@@ -20,12 +20,16 @@ void LowestScoreDrop::getScore(double &_score1, double &_score2, double &_score3
   
   std::cin >> _score1; // Break point in code, does not display grade entered, does not continue
   
+  std::cout << "Please enter in your first grade.\n";
   std::cout << "Score 2:\n";
   std::cin >> _score2;
+  std::cout << "Please enter in your second grade.\n";
   std::cout << "Score 3:\n";
   std::cin >> _score3;
+  std::cout << "Please enter in your fourth grade.\n";
   std::cout << "Score 4:\n";
   std::cin >> _score4;
+  std::cout << "Please enter in your last grade.\n";
   std::cout << "Score 5:\n";
   std::cin >> _score5;
 
@@ -33,7 +37,7 @@ void LowestScoreDrop::getScore(double &_score1, double &_score2, double &_score3
 
 void LowestScoreDrop::getCalcAverage()
 {
-  
+  getFindLowest();
 }
 
 void LowestScoreDrop::getFindLowest()
@@ -72,13 +76,18 @@ void LowestScoreDrop::getFindLowest()
 		std::cout << "The lowest score is " << *_score5;
 		std::cout << "\n This score will be dropped.\n";
 	 }
+  double total = (*_score1 + *_score2 + *_score3 + *_score4 + *_score5);
   
+  std::cout << total;
+  double newTotal;
+  newTotal = total - lowestScore;
 }
 
 LowestScoreDrop::LowestScoreDrop()
 {
   getScore(*_score1, *_score2, *_score3, *_score4, *_score5);
   getFindLowest();
+  getCalcAverage();
   getCalcAverage();
   
 }
