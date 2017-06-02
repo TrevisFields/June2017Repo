@@ -5,6 +5,7 @@
 #include <string>
 #include <cstdlib>
 #include <ctime>
+using namespace std;
 
 /*
  A bank charges $10 per month plus the following check fees for a commercial checking account:
@@ -161,9 +162,11 @@ BankCharges::~BankCharges()
   if(balance < 0)
 	 {
 		std::cout << "YOUR ACCOUNT IS OVERDRAWN!!!\n";
+		outputFile << "YOUR ACCOUNT IS OVERDRAWN!!!\n";
 	 }
   
   std::cout << "You have $" << balance << " in your account currently.\n";
+  outputFile << "You have $" << balance << " in your account currently.\n";
   
   std::cout << "Please enter in the number of checks you are going to write.\n";
   std::cin >> checksWritten;

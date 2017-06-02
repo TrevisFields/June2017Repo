@@ -31,6 +31,7 @@
 		6E379EB31EE14995004C4525 /* BankCharges.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BankCharges.cpp; sourceTree = "<group>"; };
 		6E379EB51EE149BC004C4525 /* EnergyDrinkConsumption.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = EnergyDrinkConsumption.cpp; sourceTree = "<group>"; };
 		6E379EB71EE149D8004C4525 /* EnergyDrinkConsumption.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EnergyDrinkConsumption.h; sourceTree = "<group>"; };
+		6E379EB81EE1554D004C4525 /* BankCharges.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = BankCharges.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +67,7 @@
 				6E379EAB1EE14948004C4525 /* main.cpp */,
 				6E379EB21EE14971004C4525 /* BankCharges.h */,
 				6E379EB31EE14995004C4525 /* BankCharges.cpp */,
+				6E379EB81EE1554D004C4525 /* BankCharges.txt */,
 				6E379EB51EE149BC004C4525 /* EnergyDrinkConsumption.cpp */,
 				6E379EB71EE149D8004C4525 /* EnergyDrinkConsumption.h */,
 			);
