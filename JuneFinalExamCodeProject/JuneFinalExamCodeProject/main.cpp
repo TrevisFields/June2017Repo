@@ -18,7 +18,7 @@
  -AT LEAST ONE EXAMPLE
  --> RECURSION
  - AT LEAST ONE EXAMPLE
- --> GENERIC COLLECTIONS 
+ --> GENERIC COLLECTIONS
  - AT LEAST 2 EXAMPLES
  --> DYNAMIC MEMORY ALLOCATION -- in progress
  - USE LIBERALLY
@@ -41,6 +41,8 @@
 #include "BankCharges.h"
 #include "LowestScoreDrop.h"
 #include "ProductionWorker.h"
+#include "NumberSorting.h"
+
 void ProductionWorkerScreen();
 using namespace std;
 
@@ -118,6 +120,7 @@ int main()
 		  }while(selection != 0); //end of do while loop inside of case 3
 		}
 		  break;
+		  
 		case 4: // Help and modified example from C++ from control structures through objects Tony Gaddis 8th Edition book This code and the corresponding header files
 		{
 		  int selection;
@@ -149,6 +152,40 @@ int main()
 		  }while(selection != 0); //end of do while loop inside of case 3
 		}
 		  break;
+		  
+		case 5:
+		{
+		  int selection;
+		  do
+		  { // opening brace of do/while loop
+		  { //opening brace inside do/while loop
+		  cout << setw(40) << "Chapter Program Constructors.\n";
+		  NumberSorting sorting1;
+			 const int MAX = 40; // Maximum number of nodes
+				// Define the NumberSort object
+			 NumberSorting sort;
+				// Build the list with a series of numbers
+			 for(int x = 0; x < MAX; x++)
+				sort.insertNode(x);
+				//Display the number of nodes in the list
+			 cout << "The number of nodes is " << sort.numNodes() << endl;
+			 for(double x = 10; x < MAX; x += 1.7)
+				sort.appendNode(x);
+			 cout << "Here are the nodes in a list:\n";
+			 sort.displayList();
+			 cout << "Here are the nodes in a reversed order:\n";
+			 sort.displayBackwards();
+		  cout << "\n" << setw(40) << "Now displaying Destructors.\n";
+		  } //Closing brace inside of do/while loop
+		  cout << "\nPress [ENTER]\n";
+		  system("pause");
+		  EndOfChapterRepeat(); //displays before call to destructor
+		  cin >> selection;
+		  system("cls");
+		  }while(selection != 0); //end of do while loop inside of case 3
+		}
+		  break;
+
 		  
 	 default:
 		  system("cls");
