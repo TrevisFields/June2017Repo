@@ -109,7 +109,7 @@ int main()
 		  EndOfChapterRepeat(); //displays before call to destructor
 		  cin >> selection;
 		  system("cls");
-		  }while(selection != 0); //end of do while loop inside of case 1
+		  }while(selection != 0); //end of do while loop inside of case 3
 
 		  break;
 		  
