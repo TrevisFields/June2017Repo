@@ -42,41 +42,42 @@ void LowestScoreDrop::getCalcAverage()
 
 void LowestScoreDrop::getFindLowest()
 {
-  double lowestScore;
+  double lowestScore = 0.0;
   
-  _score1 =  &lowestScore;
-  if(lowestScore <= *_score1)
+  lowestScore = _score1 = _score2 = _score3 = _score4 = _score5;
+  
+  if(lowestScore == _score1)
 	 {
-		lowestScore = *_score1;
-		std::cout << "The lowest score is " << *_score1;
+		lowestScore = _score1;
+		std::cout << "The lowest score is " << _score1;
 		std::cout << "\n This score will be dropped.\n";
 	 }
   
-  else if(lowestScore <= *_score2)
+   if(lowestScore > _score2)
 	 {
-		lowestScore = *_score2;
-		std::cout << "The lowest score is " << *_score2;
+		lowestScore = _score2;
+		std::cout << "The lowest score is " << _score2;
 		std::cout << "\n This score will be dropped.\n";
 	 }
-  else if(lowestScore <= *_score3)
+   if(lowestScore > _score3)
 	 {
-		lowestScore = *_score3;
-		std::cout << "The lowest score is " << *_score3;
+		lowestScore = _score3;
+		std::cout << "The lowest score is " << _score3;
 		std::cout << "\n This score will be dropped.\n";
 	 }
-  else if(lowestScore <= *_score4)
+   if(lowestScore > _score4)
 	 {
-		lowestScore = *_score4;
-		std::cout << "The lowest score is " << *_score4;
+		lowestScore = _score4;
+		std::cout << "The lowest score is " << _score4;
 		std::cout << "\n This score will be dropped.\n";
 	 }
-  else if(lowestScore <= *_score5)
+   if(lowestScore > _score5)
 	 {
-		lowestScore = *_score2;
-		std::cout << "The lowest score is " << *_score5;
+		lowestScore = _score5;
+		std::cout << "The lowest score is " << _score5;
 		std::cout << "\n This score will be dropped.\n";
 	 }
-  double total = (*_score1 + *_score2 + *_score3 + *_score4 + *_score5);
+  double total = (_score1 + _score2 + _score3 + _score4 + _score5);
   
   std::cout << total;
   double newTotal;
@@ -85,7 +86,7 @@ void LowestScoreDrop::getFindLowest()
 
 LowestScoreDrop::LowestScoreDrop()
 {
-  getScore(*_score1, *_score2, *_score3, *_score4, *_score5);
+  getScore(_score1, _score2, _score3, _score4, _score5);
   getFindLowest();
   getCalcAverage();
   getCalcAverage();

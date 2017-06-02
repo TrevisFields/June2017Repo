@@ -26,7 +26,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "JuneFinalExamCodeProject/LowestScoreDrop.cpp"
-            timestampString = "518100362.210888"
+            timestampString = "518107479.987968"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "18"
@@ -42,11 +42,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "JuneFinalExamCodeProject/LowestScoreDrop.cpp"
-            timestampString = "518104566.628523"
+            timestampString = "518107619.611192"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "86"
-            endingLineNumber = "86"
+            startingLineNumber = "56"
+            endingLineNumber = "56"
             landmarkName = "LowestScoreDrop::LowestScoreDrop()"
             landmarkType = "7">
          </BreakpointContent>
@@ -58,11 +58,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "JuneFinalExamCodeProject/LowestScoreDrop.cpp"
-            timestampString = "518101698.162065"
+            timestampString = "518107479.987968"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "21"
-            endingLineNumber = "21"
+            startingLineNumber = "22"
+            endingLineNumber = "22"
             landmarkName = "LowestScoreDrop::getScore(double &amp;_score1, double &amp;_score2, double &amp;_score3, double &amp;_score4, double &amp;_score5)"
             landmarkType = "7">
          </BreakpointContent>
@@ -86,31 +86,15 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "JuneFinalExamCodeProject/LowestScoreDrop.cpp"
-            timestampString = "518104566.628523"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "48"
-            endingLineNumber = "48"
-            landmarkName = "LowestScoreDrop::getFindLowest()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "JuneFinalExamCodeProject/LowestScoreDrop.cpp"
-            timestampString = "518104566.628523"
+            timestampString = "518107479.987968"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "38"
-            endingLineNumber = "38"
+            startingLineNumber = "31"
+            endingLineNumber = "31"
             landmarkName = "LowestScoreDrop::getCalcAverage()"
             landmarkType = "7">
          </BreakpointContent>
