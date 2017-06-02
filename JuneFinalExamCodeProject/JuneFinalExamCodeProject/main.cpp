@@ -1,23 +1,24 @@
   // Trevis Fields
   // CIS 17A
-  // Energy Drink Consumption Modified: 06/01/17
-  // Bank Charges Modified: 06/02/17
-  // Lowest Score Drop Modified: 06/02/17
+  // Energy Drink Consumption Modified: 06/01/17 CASE 1
+  // Bank Charges Modified: 06/02/17 CASE 2
+  // Lowest Score Drop Modified: 06/02/17 CASE 3
+  //Employee and Production Worker Classes Modified: 06/02/17
   // Upload / Due Date: 06/02/17 for earlier grade checking
   // Final upload day : 06/05/17
 /*
  FINAL EXAM PROJECT REQUIREMENTS:
  --> CLASSES -- complete
  THE PRIMARY REQUIREMENT FOR THE PROJECT. DEMONSTRATE AN UNDERSTANDING OF CODE REUSE AND ENCAPSULATION BY USING CLASSES. MORE THAN 2
- --> INHERITANCE -- complete
+ --> INHERITANCE
  - AT LEAST ONE EXAMPLE
- ACCESS MODIFIERS -- no protected modifiers used yet/ no private modifiers used yet
+ ACCESS MODIFIERS
  - DEMONSTRATE AN UNDERSTANDING OF PRIVATE/PUBLIC/PROTECTED
- --> POLYMORPHISM -- ???
+ --> POLYMORPHISM
  -AT LEAST ONE EXAMPLE
- --> RECURSION -- i believe this is complete
+ --> RECURSION
  - AT LEAST ONE EXAMPLE
- --> GENERIC COLLECTIONS -- in progress
+ --> GENERIC COLLECTIONS 
  - AT LEAST 2 EXAMPLES
  --> DYNAMIC MEMORY ALLOCATION -- in progress
  - USE LIBERALLY
@@ -39,6 +40,8 @@
 #include "EnergyDrinkConsumption.h"
 #include "BankCharges.h"
 #include "LowestScoreDrop.h"
+#include "ProductionWorker.h"
+void ProductionWorkerScreen();
 using namespace std;
 
 void EndOfChapterRepeat();
@@ -98,6 +101,7 @@ int main()
 		  break;
 		  
 		case 3:
+		{
 		  int selection;
 		  do
 		  { // opening brace of do/while loop
@@ -112,7 +116,38 @@ int main()
 		  cin >> selection;
 		  system("cls");
 		  }while(selection != 0); //end of do while loop inside of case 3
-
+		}
+		  break;
+		case 4: // Help and modified example from C++ from control structures through objects Tony Gaddis 8th Edition book This code and the corresponding header files
+		{
+		  int selection;
+		  do
+		  { // opening brace of do/while loop
+		  { //opening brace inside do/while loop
+		  cout << setw(40) << "Chapter Program Constructors.\n";
+		  ProductionWorker worker1("Trevis Fields", "0887", 1992);
+		  ProductionWorker worker2("Acacia Baude","0889",1994);
+			 ProductionWorker worker3("Patricia Jones","0888",2007);
+			 ProductionWorker worker4("Isaiah Merill","1234",2004);
+			 ProductionWorker worker5("Warren Peters","6789",1990);
+			 cout << "The Employee #" << worker1.getIdNumber() << ", " << worker1.getName() << " works on the day shift" << " and works " << worker1.getRemainingHours() << " hours a week.\n" << "They started working in " << worker1.getYearHired();
+			 getchar();
+			  cout << "\n\nThe Employee #" << worker2.getIdNumber() << ", " << worker2.getName() << " works on the day shift" << " and works " << worker2.getRemainingHours() << " hours a week.\n" << "Ther started working in " << worker2.getYearHired();
+			 getchar();
+			 cout << "\n\nThe Employee #" << worker3.getIdNumber() << ", " << worker3.getName() << " works on the day shift" << " and works " << worker3.getRemainingHours() << " hours a week.\n" << "Ther started working in " << worker3.getYearHired();
+			 getchar();
+			 cout << "\n\nThe Employee #" << worker4.getIdNumber() << ", " << worker4.getName() << " works on the day shift" << " and works " << worker4.getRemainingHours() << " hours a week.\n" << "Ther started working in " << worker4.getYearHired();
+			 getchar();
+			 cout << "\n\nThe Employee #" << worker5.getIdNumber() << ", " << worker5.getName() << " works on the day shift" << " and works " << worker5.getRemainingHours() << " hours a week.\n" << "Ther started working in " << worker5.getYearHired();
+		  cout << "\n" << setw(40) << "Now displaying Destructors.\n";
+		  } //Closing brace inside of do/while loop
+		  cout << "\nPress [ENTER]\n";
+		  system("pause");
+		  EndOfChapterRepeat(); //displays before call to destructor
+		  cin >> selection;
+		  system("cls");
+		  }while(selection != 0); //end of do while loop inside of case 3
+		}
 		  break;
 		  
 	 default:
@@ -140,5 +175,6 @@ void MenuList() // Used in choice input
   cout << "1) Introduction to C++/ Expressions and Interactivity\n" << setw(40) << "(Chapter 2 and Chapter 3)\n";
   cout << "2) Making Decisions and Loops and Files\n" << setw(40) << "(Chapter 4 and Chapter 5)\n";
   cout << "3) Functions and Arrays\n" << setw(40) << "(Chapter 6 and Chapter 7)\n";
+  cout << "4) Inheritance, Polymorphism, and Virtual Functions\n" << setw(40) << "(Chapter 15)\n";
   
 }

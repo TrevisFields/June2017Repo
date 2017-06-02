@@ -11,6 +11,7 @@
 		6E379EB41EE14995004C4525 /* BankCharges.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6E379EB31EE14995004C4525 /* BankCharges.cpp */; };
 		6E379EB61EE149BC004C4525 /* EnergyDrinkConsumption.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6E379EB51EE149BC004C4525 /* EnergyDrinkConsumption.cpp */; };
 		6E379EBB1EE18C2A004C4525 /* LowestScoreDrop.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6E379EBA1EE18C29004C4525 /* LowestScoreDrop.cpp */; };
+		6EE73F501EE1F233008D33C4 /* ProductionWorker.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6EE73F4F1EE1F233008D33C4 /* ProductionWorker.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -35,6 +36,9 @@
 		6E379EB81EE1554D004C4525 /* BankCharges.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = BankCharges.txt; sourceTree = "<group>"; };
 		6E379EB91EE18C1B004C4525 /* LowestScoreDrop.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LowestScoreDrop.h; sourceTree = "<group>"; };
 		6E379EBA1EE18C29004C4525 /* LowestScoreDrop.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LowestScoreDrop.cpp; sourceTree = "<group>"; };
+		6EE73F4B1EE1E51B008D33C4 /* EmployeeAndProductionWorkerClasses.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EmployeeAndProductionWorkerClasses.h; sourceTree = "<group>"; };
+		6EE73F4E1EE1E9E6008D33C4 /* ProductionWorker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProductionWorker.h; sourceTree = "<group>"; };
+		6EE73F4F1EE1F233008D33C4 /* ProductionWorker.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ProductionWorker.cpp; path = ../ProductionWorker.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +72,9 @@
 			isa = PBXGroup;
 			children = (
 				6E379EAB1EE14948004C4525 /* main.cpp */,
+				6EE73F4B1EE1E51B008D33C4 /* EmployeeAndProductionWorkerClasses.h */,
+				6EE73F4F1EE1F233008D33C4 /* ProductionWorker.cpp */,
+				6EE73F4E1EE1E9E6008D33C4 /* ProductionWorker.h */,
 				6E379EB91EE18C1B004C4525 /* LowestScoreDrop.h */,
 				6E379EBA1EE18C29004C4525 /* LowestScoreDrop.cpp */,
 				6E379EB21EE14971004C4525 /* BankCharges.h */,
@@ -136,6 +143,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6EE73F501EE1F233008D33C4 /* ProductionWorker.cpp in Sources */,
 				6E379EAC1EE14948004C4525 /* main.cpp in Sources */,
 				6E379EB61EE149BC004C4525 /* EnergyDrinkConsumption.cpp in Sources */,
 				6E379EB41EE14995004C4525 /* BankCharges.cpp in Sources */,
@@ -268,6 +276,7 @@
 				6E379EB11EE14948004C4525 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

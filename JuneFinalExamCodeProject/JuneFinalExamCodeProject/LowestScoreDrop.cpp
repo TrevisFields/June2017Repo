@@ -74,7 +74,7 @@ void LowestScoreDrop::getCalcAverage()
 
 void LowestScoreDrop::getFindLowest()
 {
-  double lowestScore;
+  double lowestScore = 0.0;
   
   
   if(_score1 < _score2)
