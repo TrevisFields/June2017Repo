@@ -96,13 +96,21 @@ int main()
 		  break;
 		  
 		case 3:
-		{
 		  int selection;
+		  do
+		  { // opening brace of do/while loop
+		  { //opening brace inside do/while loop
+		  cout << setw(40) << "Chapter Program Constructors.\n";
 		  LowestScoreDrop score1;
-		  EndOfChapterRepeat(); //Displays after call to Destructors
+		  cout << "\n" << setw(40) << "Now displaying Destructors.\n";
+		  } //Closing brace inside of do/while loop
+		  cout << "\nPress [ENTER]\n";
+		  system("pause");
+		  EndOfChapterRepeat(); //displays before call to destructor
 		  cin >> selection;
-		  
-		}
+		  system("cls");
+		  }while(selection != 0); //end of do while loop inside of case 1
+
 		  break;
 		  
 	 default:

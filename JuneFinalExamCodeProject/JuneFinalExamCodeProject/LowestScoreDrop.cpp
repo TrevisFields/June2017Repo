@@ -44,52 +44,54 @@ void LowestScoreDrop::getFindLowest()
 {
   double lowestScore = 0.0;
   
-  lowestScore = _score1 = _score2 = _score3 = _score4 = _score5;
-  
-  if(lowestScore == _score1)
+ 
+  if(_score1 <=_score2 && _score1 <= _score3 && _score1 <= _score4 && _score1 <= _score5)
 	 {
-		lowestScore = _score1;
+		 lowestScore = _score1;
 		std::cout << "The lowest score is " << _score1;
 		std::cout << "\n This score will be dropped.\n";
-	 }
-  
-   if(lowestScore > _score2)
+      if(lowestScore >= _score2 && _score2 <= _score3 && _score2 <= _score4 && _score2 <= _score5 && _score2 <= _score1)
 	 {
 		lowestScore = _score2;
 		std::cout << "The lowest score is " << _score2;
 		std::cout << "\n This score will be dropped.\n";
 	 }
-   if(lowestScore > _score3)
+  
+   else if(lowestScore >= _score3 && _score3 <= _score1 && _score3 <= _score2 && _score3 <= _score4 && _score3 <= _score5)
 	 {
 		lowestScore = _score3;
 		std::cout << "The lowest score is " << _score3;
 		std::cout << "\n This score will be dropped.\n";
 	 }
-   if(lowestScore > _score4)
+  
+   else if(lowestScore >= _score4 && _score4 <= _score2 && _score4 <= _score3 && _score4 <= _score1 &&_score4 <= _score5)
 	 {
 		lowestScore = _score4;
 		std::cout << "The lowest score is " << _score4;
 		std::cout << "\n This score will be dropped.\n";
 	 }
-   if(lowestScore > _score5)
+  
+  else if(lowestScore >= _score5 && _score5 <= _score1 && _score5 <= _score2 && _score5 <= _score3 && _score5 <= _score4)
 	 {
 		lowestScore = _score5;
 		std::cout << "The lowest score is " << _score5;
 		std::cout << "\n This score will be dropped.\n";
 	 }
+		}
+		
   double total = (_score1 + _score2 + _score3 + _score4 + _score5);
   
-  std::cout << total;
+  //std::cout << "\n" << total;
   double newTotal;
   newTotal = total - lowestScore;
+  std::cout << "The average points you have are: "  << newTotal << "\n";;
 }
 
 LowestScoreDrop::LowestScoreDrop()
 {
   getScore(_score1, _score2, _score3, _score4, _score5);
-  getFindLowest();
   getCalcAverage();
-  getCalcAverage();
+
   
 }
 
