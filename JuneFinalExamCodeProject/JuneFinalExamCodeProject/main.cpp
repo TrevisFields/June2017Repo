@@ -12,6 +12,7 @@
 #include <cstdlib>
 #include "EnergyDrinkConsumption.h"
 #include "BankCharges.h"
+#include "LowestScoreDrop.h"
 using namespace std;
 
 void EndOfChapterRepeat();
@@ -70,6 +71,15 @@ int main()
 		}// closing brace for case 2
 		  break;
 		  
+		case 3:
+		{
+		  int selection;
+		  LowestScoreDrop score1;
+		  EndOfChapterRepeat(); //Displays after call to Destructors
+		  cin >> selection;
+		  
+		}
+		  break;
 		  
 	 default:
 		  system("cls");

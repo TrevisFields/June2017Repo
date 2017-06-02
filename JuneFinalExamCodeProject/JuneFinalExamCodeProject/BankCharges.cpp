@@ -252,6 +252,7 @@ BankCharges::~BankCharges()
   outputFile.close(); // CLose File for Windows Applications
   outputFile.close(); // Close File for Mac Applications
   
-  // Testing to see if you can input the data from the file
+  // Future code updates to do later after submission
+  // Input code to put all of the code into a file after program executes.
   
 }
