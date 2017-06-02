@@ -3,6 +3,8 @@
   // Energy Drink Consumption Modified: 06/01/17
   // Bank Charges Modified: 06/02/17
   // Lowest Score Drop Modified: 06/02/17
+  // Upload / Due Date: 06/02/17 for earlier grade checking
+  // Final upload day : 06/05/17
 /*
  FINAL EXAM PROJECT REQUIREMENTS:
  --> CLASSES -- complete
