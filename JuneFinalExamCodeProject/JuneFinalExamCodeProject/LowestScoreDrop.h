@@ -9,7 +9,11 @@ private:
   double setCalcAverage();
   double setFindLowest();
   
-  double *_score1, *_score2, *_score3, *_score4, *_score5;
+  double *_score1 = 0;
+  double *_score2 = 0;
+  double *_score3 = 0;
+  double *_score4 = 0;
+  double *_score5 = 0;
   
 public:
   void getScore(double &, double &, double &, double &, double &);

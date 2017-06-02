@@ -19,9 +19,6 @@ void LowestScoreDrop::getScore(double &_score1, double &_score2, double &_score3
   std::cout << "Please enter in your first grade.\n";
   
   std::cin >> _score1; // Break point in code, does not display grade entered, does not continue
-  //std::cout << "Score 1: " << *_score1;
-  //std::cout << "Score 1: " << _score1;
-  
   
   std::cout << "Score 2:\n";
   std::cin >> _score2;
@@ -31,9 +28,7 @@ void LowestScoreDrop::getScore(double &_score1, double &_score2, double &_score3
   std::cin >> _score4;
   std::cout << "Score 5:\n";
   std::cin >> _score5;
-  
-	 // std::cout << "Score 1: " << *_score1;
-  //std::cout << "Score 1: " << & _score1;
+
 }
 
 void LowestScoreDrop::getCalcAverage()
@@ -43,12 +38,48 @@ void LowestScoreDrop::getCalcAverage()
 
 void LowestScoreDrop::getFindLowest()
 {
+  double lowestScore;
+  
+  _score1 =  &lowestScore;
+  if(lowestScore <= *_score1)
+	 {
+		lowestScore = *_score1;
+		std::cout << "The lowest score is " << *_score1;
+		std::cout << "\n This score will be dropped.\n";
+	 }
+  
+  else if(lowestScore <= *_score2)
+	 {
+		lowestScore = *_score2;
+		std::cout << "The lowest score is " << *_score2;
+		std::cout << "\n This score will be dropped.\n";
+	 }
+  else if(lowestScore <= *_score3)
+	 {
+		lowestScore = *_score3;
+		std::cout << "The lowest score is " << *_score3;
+		std::cout << "\n This score will be dropped.\n";
+	 }
+  else if(lowestScore <= *_score4)
+	 {
+		lowestScore = *_score4;
+		std::cout << "The lowest score is " << *_score4;
+		std::cout << "\n This score will be dropped.\n";
+	 }
+  else if(lowestScore <= *_score5)
+	 {
+		lowestScore = *_score2;
+		std::cout << "The lowest score is " << *_score5;
+		std::cout << "\n This score will be dropped.\n";
+	 }
   
 }
 
 LowestScoreDrop::LowestScoreDrop()
 {
   getScore(*_score1, *_score2, *_score3, *_score4, *_score5);
+  getFindLowest();
+  getCalcAverage();
   
 }
 
