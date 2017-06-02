@@ -129,5 +129,6 @@ void MenuList() // Used in choice input
   cout << "Menu\n";
   cout << "1) Introduction to C++/ Expressions and Interactivity\n" << setw(40) << "(Chapter 2 and Chapter 3)\n";
   cout << "2) Making Decisions and Loops and Files\n" << setw(40) << "(Chapter 4 and Chapter 5)\n";
+  cout << "3) Functions and Arrays\n" << setw(40) << "(Chapter 6 and Chapter 7)\n";
   
 }
