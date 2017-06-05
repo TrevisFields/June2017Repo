@@ -13,6 +13,7 @@
 		6E379EBB1EE18C2A004C4525 /* LowestScoreDrop.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6E379EBA1EE18C29004C4525 /* LowestScoreDrop.cpp */; };
 		6EE73F501EE1F233008D33C4 /* ProductionWorker.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6EE73F4F1EE1F233008D33C4 /* ProductionWorker.cpp */; };
 		6EE73F551EE20331008D33C4 /* NumberSorting.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6EE73F541EE20331008D33C4 /* NumberSorting.cpp */; };
+		6EE73F581EE51477008D33C4 /* Groceries.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6EE73F571EE51477008D33C4 /* Groceries.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -42,6 +43,8 @@
 		6EE73F4F1EE1F233008D33C4 /* ProductionWorker.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ProductionWorker.cpp; path = ../ProductionWorker.cpp; sourceTree = "<group>"; };
 		6EE73F531EE20323008D33C4 /* NumberSorting.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NumberSorting.h; sourceTree = "<group>"; };
 		6EE73F541EE20331008D33C4 /* NumberSorting.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NumberSorting.cpp; sourceTree = "<group>"; };
+		6EE73F571EE51477008D33C4 /* Groceries.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Groceries.cpp; sourceTree = "<group>"; };
+		6EE73F591EE51488008D33C4 /* Groceries.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Groceries.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +90,8 @@
 				6E379EB81EE1554D004C4525 /* BankCharges.txt */,
 				6E379EB51EE149BC004C4525 /* EnergyDrinkConsumption.cpp */,
 				6E379EB71EE149D8004C4525 /* EnergyDrinkConsumption.h */,
+				6EE73F571EE51477008D33C4 /* Groceries.cpp */,
+				6EE73F591EE51488008D33C4 /* Groceries.h */,
 			);
 			path = JuneFinalExamCodeProject;
 			sourceTree = "<group>";
@@ -148,6 +153,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6EE73F581EE51477008D33C4 /* Groceries.cpp in Sources */,
 				6EE73F501EE1F233008D33C4 /* ProductionWorker.cpp in Sources */,
 				6E379EAC1EE14948004C4525 /* main.cpp in Sources */,
 				6E379EB61EE149BC004C4525 /* EnergyDrinkConsumption.cpp in Sources */,
