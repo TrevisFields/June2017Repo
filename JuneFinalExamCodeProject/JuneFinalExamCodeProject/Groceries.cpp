@@ -141,7 +141,7 @@ void GroceriesDisplay()
   getGroceriesSize(groceriesSize);
   
   Groceries<string> groceries(getGroceriesSize);
-  
+  try {
   do
 	 {
 		menu(choice);
@@ -158,6 +158,20 @@ void GroceriesDisplay()
 		  }
 		}
 	 }while(choice != FINISH_CHOICE);
+}
+ catch (string wrongItem)
+  {
+	 cout << wrongItem;
+}
+}
+
+string notAListItem(string wrongItem)
+{
+  if (basket = "")
+	 {
+		string wrongItem = "You cannot get that.\n";
+		throw wrongItem;
+	 }
 }
 
   //Used chapter 18-3  to create this program to try and get an understanding of how to place the code into a different file to run in the menu program that i created. Could not figure out everything that i could but wanted to submit the code in for grading before it was to late. Would like to continue to work on this code and the other code that i have over the course of my learning even though the class is over.
